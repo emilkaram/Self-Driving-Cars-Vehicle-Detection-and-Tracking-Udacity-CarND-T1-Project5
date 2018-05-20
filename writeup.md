@@ -1,7 +1,7 @@
 ## Vehicle Detection and Tracking  Udacity CarND T1 Project5
 ### This project to detect and Track vehicles based on machine learning algorithm. 
 
-Disclaimer:Some of the fucntions i used are from Udacity self driving car lectures
+######Disclaimer:Some of the fucntions i used are from Udacity self driving car lectures
 ---
 ![](https://github.com/emilkaram/Vehicle-Detection-and-Tracking-Udacity-CarND-T1-Project5/blob/master/images/13.png)
 
