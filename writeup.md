@@ -79,11 +79,23 @@ Here is an example using the above HOG parameters:
 
 #### 2. Here I settled on final choice of HOG parameters.
 
-I tried various combinations of parameters along with spatial and histogram image features and tuned the parmeter till i got a good ML model that can accuratly predition cars in images.
+I tried various combinations of parameters along with spatial and histogram image features and tuned the parmeters till i got a good ML model that can accuratly predition cars in images.
 
-#### 3. Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them).
+#### 3. Here I will describe how I trained a classifier using HOG features and color features.
 
-I trained a linear SVM using...
+I trained a linear SVM using labled car and non car dataset
+after extrating features from the images and normiliaze the combined features (HOG , color , spatial ) i split and randamoize my dataset to be 80% training set and 20% testing set
+
+Here are my training results and accuracy measured on the test dataset
+
+Using: 9 orientations 8 pixels per cell and 8 cells per block
+
+Feature vector length: 4896
+
+19.21 Seconds to train SVC
+
+Test Accuracy of SVC =  0.9865
+
 
 ### Sliding Window Search
 
