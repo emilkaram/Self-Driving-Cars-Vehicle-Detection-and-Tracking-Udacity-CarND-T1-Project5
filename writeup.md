@@ -71,7 +71,7 @@ hist_feat = True # Histogram features on or off
 hog_feat = True # HOG features on or off
 
 
-Here is an example using the `YCrCb` color space and HOG parameters of `orientations=8`, `pixels_per_cell=(8, 8)` and `cells_per_block=(2, 2)`:
+Here is an example using the above HOG parameters:
 
 
 ![](https://github.com/emilkaram/Vehicle-Detection-and-Tracking-Udacity-CarND-T1-Project5/blob/master/images/2.png)
