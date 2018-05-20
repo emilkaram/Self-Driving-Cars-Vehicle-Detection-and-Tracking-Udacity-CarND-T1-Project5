@@ -77,7 +77,7 @@ Here is an example using the above HOG parameters:
 ![](https://github.com/emilkaram/Vehicle-Detection-and-Tracking-Udacity-CarND-T1-Project5/blob/master/images/2.png)
 
 
-#### 2. Explain how you settled on your final choice of HOG parameters.
+#### 2. Here I settled on final choice of HOG parameters.
 
 I tried various combinations of parameters along with spatial and histogram image features and tuned the parmeter till i got a good ML model that can accuratly predition cars in images.
 
