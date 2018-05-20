@@ -114,7 +114,7 @@ here are some examples I used for sliding windows:
     ystop = 660
     scale = 3.5
      
-to search random window positions at random scales all over the image and came up with this (ok just kidding I didn't actually ;):
+Here an expample of sliding window search:
 
 ![](https://github.com/emilkaram/Vehicle-Detection-and-Tracking-Udacity-CarND-T1-Project5/blob/master/images/6.png)
 
