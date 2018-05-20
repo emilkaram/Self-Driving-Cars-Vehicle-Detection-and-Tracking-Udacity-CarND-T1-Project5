@@ -84,7 +84,7 @@ I tried various combinations of parameters along with spatial and histogram imag
 #### 3. Here I will describe how I trained a classifier using HOG features and color features.
 
 I trained a linear SVM using labled car and non car dataset
-after extrating features from the images and normiliaze the combined features (HOG , color , spatial ) i split and randamoize my dataset to be 80% training set and 20% testing set
+after extracting features from the images and normiliaze the combined features (HOG , color , spatial ) i split and randamoize my dataset to be 80% training set and 20% testing set
 
 Here are my training results and accuracy measured on the test dataset
 
@@ -99,9 +99,9 @@ Test Accuracy of SVC =  0.9865
 
 ### Sliding Window Search
 
-#### 1. Describe how (and identify where in your code) you implemented a sliding window search.  How did you decide what scales to search and how much to overlap windows?
+#### 1. Here I will describe how I implemented a sliding window search and How did I decide what scales to search and how much to overlap windows
 
-I decided first to use fixed size windows with some overlaps the resulat was ok but not good enough and consistent with car size and posion in the frame 
+I decided first to use fixed size windows with some overlaps(trired diffrent size and overlap ratios) the resulat was ok but not good enough and consistent with car size and posion in the frame 
 Then i decide to use diffrent size windows with a scale.
 The scale factor was set on different regions of the image (e.g. small near the horizon, larger in the center).
 here are some examples I used for sliding windows:
@@ -142,9 +142,9 @@ Here an expample of sliding window search:
 
 ![](https://github.com/emilkaram/Vehicle-Detection-and-Tracking-Udacity-CarND-T1-Project5/blob/master/images/6.png)
 
-#### 2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
+#### 2. Here some examples of test image to demonstrate how my pipeline is working:
 
-Ultimately I searched on two scales using YCrCb 3-channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result.  Here are some example images:
+I used YCrCb 3-channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result.  Here are some example images:
 
 ![](https://github.com/emilkaram/Vehicle-Detection-and-Tracking-Udacity-CarND-T1-Project5/blob/master/images/4.png)
 
@@ -153,7 +153,7 @@ Ultimately I searched on two scales using YCrCb 3-channel HOG features plus spat
 
 ### Video Implementation
 
-I sued two methods for pipline:
+I used two methods for pipline:
 Basic method
 Calculating HOG for every sliding window in every frame , the method got a good results but slow , so i used advanced method to speed up the alogrithm and be able to be used in realtime detection
 
