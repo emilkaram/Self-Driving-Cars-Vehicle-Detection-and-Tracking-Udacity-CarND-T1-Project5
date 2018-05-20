@@ -91,6 +91,15 @@ Ultimately I searched on two scales using YCrCb 3-channel HOG features plus spat
 
 ### Video Implementation
 
+I sued two methods for pipline:
+Basic method
+
+Adanced method
+A more efficient method for doing the sliding window approach, one that allows me to only have to extract the Hog features once.
+The find_cars funation only has to extract hog features once, for each of a small set of predetermined window sizes (defined by a scale argument), and then can be sub-sampled to get all of its overlaying windows. 
+Each window is defined by a scaling factor that impacts the window size. 
+The scale factor can be set on different regions of the image (e.g. small near the horizon, larger in the center).
+
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (somewhat wobbly or unstable bounding boxes are ok as long as you are identifying the vehicles most of the time with minimal false positives.)
 Here's a [link to my video result](./project_video.mp4)
 ![](https://github.com/emilkaram/Vehicle-Detection-and-Tracking-Udacity-CarND-T1-Project5/blob/master/project_video_output.mp4)
@@ -122,7 +131,7 @@ Here's an example result showing the heatmap from a series of frames of video, t
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
 
-When implemented the pipline on the video in the begining i used fixed size sliding windows I got good results for predicting the car position but with jittery and not consistent boxes drwan around the cars , i improve my pipline by using diffrent size sliding windows with diffrent scale factor based on the expected car position also looged some histoy of the boxes so i can keep track of the car movment and end up with very good resulsts as shown in the project video:
+When implemented the pipline on the video in the begining i used fixed size sliding windows I got good results for predicting the car position but with jittery and not consistent boxes drwan around the cars , i improve my pipline by using diffrent size sliding windows with diffrent scale factor based on the expected car position (e.g. small near the horizon, larger in the center) also loged some histoy of the boxes so i can keep track of the car movment and end up with very good resulsts as shown in the project video:
 ![](https://github.com/emilkaram/Vehicle-Detection-and-Tracking-Udacity-CarND-T1-Project5/blob/master/project_video_output.mp4)
 
 only one spot it show false positive near a side road sign borad i may improve this by enahncing my filter thershold.
