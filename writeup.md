@@ -79,7 +79,7 @@ Here is an example using the above HOG parameters:
 
 #### 2. Explain how you settled on your final choice of HOG parameters.
 
-I tried various combinations of parameters and...
+I tried various combinations of parameters along with spatial and histogram image features and tuned the parmeter till i got a good ML model that can accuratly predition cars in images.
 
 #### 3. Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them).
 
