@@ -9,6 +9,13 @@
 The goals / steps of this project are the following:
 
 * I performed a Histogram of Oriented Gradients (HOG) feature extraction on a labeled training set of images and train a classifier Linear SVM classifier
+
+Here are my training results and accuracy measured on the test dataset:
+Using: 9 orientations 8 pixels per cell and 8 cells per block
+Feature vector length: 4896
+19.21 Seconds to train SVC...
+Test Accuracy of SVC =  0.9865
+
 * I also appllied a color transform and append binned color features, as well as histograms of color, to HOG feature vector. 
 * Then normalized all features and randomize a selection/splitting for training and testing.
 * I implemented a sliding-window technique and used my trained classifier to search for vehicles in images.
