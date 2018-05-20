@@ -179,4 +179,7 @@ in Future I will combine  vehicle detection pipeline with the lane finding imple
 
   
 
-####Disclaimer:Some of the fucntions i used are from Udacity self driving car lectures
+
+
+
+Disclaimer:Some of the fucntions i used are from Udacity self driving car lectures
