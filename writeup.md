@@ -93,6 +93,7 @@ Ultimately I searched on two scales using YCrCb 3-channel HOG features plus spat
 
 I sued two methods for pipline:
 Basic method
+Calculating HOG for every sliding window in every frame , the method got a good results but slow , so i used advanced method to speed up the alogrithm and be able to be used in realtime detection
 
 Adanced method
 A more efficient method for doing the sliding window approach, one that allows me to only have to extract the Hog features once.
