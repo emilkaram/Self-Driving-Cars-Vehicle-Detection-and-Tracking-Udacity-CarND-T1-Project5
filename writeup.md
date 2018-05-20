@@ -1,6 +1,7 @@
 ## Vehicle Detection and Tracking  Udacity CarND T1 Project5
 ### This project to detect and Track vehicles based on machine learning algorithm. 
 
+Disclaimer:Some of the fucntions i used are from Udacity self driving car lectures
 ---
 ![](https://github.com/emilkaram/Vehicle-Detection-and-Tracking-Udacity-CarND-T1-Project5/blob/master/images/13.png)
 
@@ -76,7 +77,44 @@ I trained a linear SVM using...
 
 #### 1. Describe how (and identify where in your code) you implemented a sliding window search.  How did you decide what scales to search and how much to overlap windows?
 
-I decided to search random window positions at random scales all over the image and came up with this (ok just kidding I didn't actually ;):
+I decided first to use fixed size windows with some overlaps the resulat was ok but not good enough and consistent with car size and posion in the frame 
+Then i decide to use diffrent size windows with a scale.
+The scale factor was set on different regions of the image (e.g. small near the horizon, larger in the center).
+here are some examples I used for sliding windows:
+    ystart = 400
+    ystop = 464
+    scale = 1.0
+     
+    ystart = 416
+    ystop = 480
+    scale = 1.0
+     
+    ystart = 400
+    ystop = 496
+    scale = 1.5
+         
+    ystart = 432
+    ystop = 528
+    scale = 1.5
+        
+    ystart = 400
+    ystop = 528
+    scale = 2.0
+       
+    
+    ystart = 432
+    ystop = 560
+    scale = 2.0
+   
+    ystart = 400
+    ystop = 596
+    scale = 3.5
+     
+    ystart = 464
+    ystop = 660
+    scale = 3.5
+     
+to search random window positions at random scales all over the image and came up with this (ok just kidding I didn't actually ;):
 
 ![](https://github.com/emilkaram/Vehicle-Detection-and-Tracking-Udacity-CarND-T1-Project5/blob/master/images/6.png)
 
@@ -99,7 +137,7 @@ Adanced method
 A more efficient method for doing the sliding window approach, one that allows me to only have to extract the Hog features once.
 The find_cars funation only has to extract hog features once, for each of a small set of predetermined window sizes (defined by a scale argument), and then can be sub-sampled to get all of its overlaying windows. 
 Each window is defined by a scaling factor that impacts the window size. 
-The scale factor can be set on different regions of the image (e.g. small near the horizon, larger in the center).
+The scale factor was set on different regions of the image (e.g. small near the horizon, larger in the center).
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (somewhat wobbly or unstable bounding boxes are ok as long as you are identifying the vehicles most of the time with minimal false positives.)
 Here's a [link to my video result](./project_video.mp4)
