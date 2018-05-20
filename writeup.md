@@ -100,5 +100,11 @@ Here's an example result showing the heatmap from a series of frames of video, t
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+
+When implemented the pipline on the video in the begining i used fixed size sliding windows I got good results for predicting the car position but with jittery and not consistent boxes drwan around the cars , i improve my pipline by using diffrent size sliding windows with diffrent scale factor based on the expected car position also looged some histoy of the boxes so i can keep track of the car movment and end up with very good resulsts as shown in the project video:
+![](https://github.com/emilkaram/Vehicle-Detection-and-Tracking-Udacity-CarND-T1-Project5/blob/master/project_video_output.mp4)
+
+in Future I will combine  vehicle detection pipeline with the lane finding implementation from my last project
+
+  
 
