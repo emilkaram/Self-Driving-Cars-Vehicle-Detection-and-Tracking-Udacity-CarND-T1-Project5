@@ -105,6 +105,7 @@ I decided first to use fixed size windows with some overlaps(trired diffrent siz
 Then i decide to use diffrent size windows with a scale.
 The scale factor was set on different regions of the image (e.g. small near the horizon, larger in the center).
 here are some examples I used for sliding windows:
+   
     ystart = 400
     ystop = 464
     scale = 1.0
@@ -163,8 +164,9 @@ The find_cars funation only has to extract hog features once, for each of a smal
 Each window is defined by a scaling factor that impacts the window size. 
 The scale factor was set on different regions of the image (e.g. small near the horizon, larger in the center).
 
-#### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (somewhat wobbly or unstable bounding boxes are ok as long as you are identifying the vehicles most of the time with minimal false positives.)
-Here's a [link to my video result](./project_video.mp4)
+#### 1. Here a link to my final video output.  my pipeline performed reasonably well on the entire project video with minimal false positives.
+Here's a link to my video result
+
 ![](https://github.com/emilkaram/Vehicle-Detection-and-Tracking-Udacity-CarND-T1-Project5/blob/master/project_video_output.mp4)
 
 
