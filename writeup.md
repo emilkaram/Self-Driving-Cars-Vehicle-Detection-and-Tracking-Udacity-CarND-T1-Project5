@@ -167,7 +167,8 @@ The scale factor was set on different regions of the image (e.g. small near the 
 #### 1. Here a link to my final video output.  my pipeline performed reasonably well on the entire project video with minimal false positives.
 Here's a link to my video result
 
-![](https://github.com/emilkaram/Vehicle-Detection-and-Tracking-Udacity-CarND-T1-Project5/blob/master/project_video_output.mp4)
+https://github.com/emilkaram/Vehicle-Detection-and-Tracking-Udacity-CarND-T1-Project5/blob/master/project_video_output.mp4
+
 
 
 
