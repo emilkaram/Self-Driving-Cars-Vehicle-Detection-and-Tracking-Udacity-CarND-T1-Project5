@@ -174,7 +174,7 @@ https://github.com/emilkaram/Vehicle-Detection-and-Tracking-Udacity-CarND-T1-Pro
 
 #### 2. Here I will describe how I implemented filter for false positives and method for combining overlapping bounding boxes.
 
-I recorded the positions of positive detections in each frame of the video.  From the positive detections I created a heatmap and then thresholded that map to identify vehicle positions.  I then used `scipy.ndimage.measurements.label()` to identify individual blobs in the heatmap.  I then assumed each blob corresponded to a vehicle.  I constructed bounding boxes to cover the area of each blob detected.  
+I recorded the positions of positive detections in each frame of the video.  From the positive detections I created a heatmap and then thresholded that map to identify vehicle positions.  I then used `scipy.ndimage.measurements.label()` to identify individual blobs in the heatmap.  I then assumed each blob corresponded to a vehicle.  I constructed bounding boxes to cover the area of each blob detected.  Also loged some histoy of the boxes so i can keep track of the car movement and able to combine boxes in case of detecting multiple cars  this end up with very good resulsts as shown in the project video. 
 
 Here's an example result showing the heatmap and the result of `scipy.ndimage.measurements.label()` and the bounding boxes then overlaid on the last frame of video:
 
@@ -196,7 +196,7 @@ Here's an example result showing the heatmap and the result of `scipy.ndimage.me
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
 
-When implemented the pipline on the video in the begining i used fixed size sliding windows I got good results for predicting the car position but with jittery and not consistent boxes drwan around the cars , i improve my pipline by using diffrent size sliding windows with diffrent scale factor based on the expected car position (e.g. small near the horizon, larger in the center) also loged some histoy of the boxes so i can keep track of the car movment and end up with very good resulsts as shown in the project video:
+When implemented the pipline on the video in the begining i used fixed size sliding windows I got good results for predicting the car position but with jittery and not consistent boxes drwan around the cars , i improve my pipline by using diffrent size sliding windows with diffrent scale factor based on the expected car position (e.g. small near the horizon, larger in the center) also loged some histoy of the boxes so i can keep track of the car movement and end up with very good resulsts as shown in the project video:
 ![](https://github.com/emilkaram/Vehicle-Detection-and-Tracking-Udacity-CarND-T1-Project5/blob/master/project_video_output.mp4)
 
 only one spot it show false positive near a side road sign borad i may improve this by enahncing my filter thershold.
