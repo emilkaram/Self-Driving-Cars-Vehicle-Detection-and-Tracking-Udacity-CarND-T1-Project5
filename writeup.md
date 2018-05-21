@@ -79,7 +79,7 @@ Here is an example using the above HOG parameters:
 
 #### 2. Here I settled on final choice of HOG parameters.
 
-I tried various combinations of parameters along with spatial and histogram image features and tuned the parmeters till i got a good ML model that can accuratly predition cars in images.
+I tried various combinations of parameters along with spatial and histogram image features and tuned the parmeters till i got a good ML model that can accuratly predit cars in images.
 
 #### 3. Here I will describe how I trained a classifier using HOG features and color features.
 
@@ -101,7 +101,7 @@ Test Accuracy of SVC =  0.9865
 
 #### 1. Here I will describe how I implemented a sliding window search and How did I decide what scales to search and how much to overlap windows
 
-I decided first to use fixed size windows with some overlaps(trired diffrent size and overlap ratios) the resulat was ok but not good enough and consistent with car size and posion in the frame 
+I decided first to use fixed size windows with some overlaps(trired diffrent size and overlap ratios) the result was ok but not good enough and consistent with car size and posion in the frame 
 Then i decide to use diffrent size windows with a scale.
 The scale factor was set on different regions of the image (e.g. small near the horizon, larger in the center).
 here are some examples I used for sliding windows:
